@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To The Icon</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('cover-photo.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* 70% transparency */
+            z-index: -1;
+        }
+
+        h1, h3 {
+            color: #ccc; /* Lighter color for the text */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            padding: 10px 10px;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px  10px;
+        }
+
+        /* Button column - aligned right, near the icon text */
+        .button-column {
+            position: fixed;
+            top: 50%;
+            right: 300px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            z-index: 1;
+        }
+
+        .button-column button {
+    padding: 12px 30px;
+    background-color: rgba(255, 214, 224, 0.6); /* translucent pink */
+    color: #5a3d42;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-column button:hover {
+    background-color: rgba(255, 182, 193, 0.75);
+}
+
+        .button-column button a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Welcome to Our Online Store</h1>
+            <p>Your one-stop destination for premium fashion. Explore our collections for Women, Men, and Kids, featuring the latest trends and styles.</p>
+        </div>
+	
+        <!-- Buttons Column: Register, Shop Now, Login -->
+        <div class="button-column">
+            <button><a href="Register.php">Register Now</a></button>
+            <button><a href="main2.php">Shop Now</a></button>
+            <button><a href="login.php">Login</a></button>
+        </div>
+	</div>
+</body>
+</html>
